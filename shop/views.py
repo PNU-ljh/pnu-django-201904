@@ -22,9 +22,9 @@ def item_detail(request, pk):
     })
 
 def shop_list(request):
-    qset = Shop.objects.all()
+    qs = Shop.objects.all()
     return render(request, 'shop/shop_list.html', {
-        'shop_list': qset,
+        'shop_list': qs,
     })
 
 def shop_detail(request, pk):
